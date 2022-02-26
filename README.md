@@ -18,7 +18,7 @@ npm run dev
 
 ## 🔖 Resultado Final
 
-Live Demo [https://asuntos-frontend-react.vercel.app/](https://asuntos-frontend-react.vercel.app/)
+Live Demo [https://asuntos-frontend-reactjs.vercel.app/](https://asuntos-frontend-reactjs.vercel.app/)
 
 ## 🧑🏻 Author
 
