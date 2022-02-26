@@ -9,7 +9,7 @@ const AdminScreen = () => {
       <nav className='px-4 bg-blue-300'>menu</nav>
       <div className='flex flex-col'>
         <Header />
-        <main className='grow bg-pink-400'>
+        <main className='grow bg-app-index'>
           <Outlet />
         </main>
       </div>
