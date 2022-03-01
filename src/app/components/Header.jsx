@@ -31,8 +31,8 @@ const Header = () => {
           </div>
 
           <div className='flex flex-col justify-center'>
-            <h4 className='text-base font-bold'>Mia V</h4>
-            <span className='text-xs text-gray-400'>Student</span>
+            <h4 className='text-base font-bold select-none'>Mia V</h4>
+            <span className='text-xs text-gray-400 select-none'>Student</span>
           </div>
         </div>
       </div>
