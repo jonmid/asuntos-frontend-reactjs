@@ -13,7 +13,7 @@ const App = () => {
       <div className='w-screen h-screen'>
         <Routes>
           <Route path='/' element={<LandingPageScreen />} />
-          <Route path='/app' element={<AdminScreen />}>
+          <Route path='/admin' element={<AdminScreen />}>
             <Route index element={<HomeScreen />} />
             {/* <Route path='*' element={<h1>404 Not Found Interno</h1>} /> */}
           </Route>
