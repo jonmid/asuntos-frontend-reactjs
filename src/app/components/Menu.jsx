@@ -5,7 +5,7 @@ import logoIcon from './../../assets/icons/logo.svg'
 
 const Menu = () => {
   return (
-    <nav className='flex flex-col h-screen bg-app-800'>
+    <nav className='hidden h-screen bg-app-800 lg:flex lg:flex-col'>
       <section className='mt-10'>
         <div className='flex space-x-3 items-center justify-center'>
           <img className='select-none' src={logoIcon} alt='logo' />

@@ -7,7 +7,7 @@ import avatarIcon from './../../assets/img/avatar.png'
 
 const Header = () => {
   return (
-    <header className='flex items-center justify-end h-20 bg-app-header sm:justify-start'>
+    <header className='flex items-center justify-end h-20 bg-app-header shadow-lg border-b border-app-200 sm:justify-start'>
       <div className='hidden sm:grow sm:flex sm:items-center sm:pl-3 md:pl-10'>
         <div className='text-app-500'>
           <IconSearch size={24} stroke={3} />

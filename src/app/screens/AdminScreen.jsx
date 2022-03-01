@@ -6,11 +6,11 @@ import Menu from '../components/Menu'
 
 const AdminScreen = () => {
   return (
-    <div className='grid grid-cols-[auto_1fr] w-full h-full'>
+    <div className='grid grid-cols-1 w-full h-full lg:grid-cols-[auto_1fr]'>
       <Menu />
-      <div className='flex flex-col'>
+      <div className='flex flex-col h-screen'>
         <Header />
-        <main className='grow bg-app-index'>
+        <main className='grow h-full bg-app-index overflow-auto'>
           <Outlet />
         </main>
       </div>

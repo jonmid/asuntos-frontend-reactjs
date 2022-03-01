@@ -8,18 +8,40 @@
   --color-scrollbar-thumb-hover: #ff5252; /* bg-app-accent */
 }
 
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
   scrollbar-width: thin;
   scrollbar-color: var(--color-scrollbar-thumb) var(--color-scrollbar-background);
 }
 
-html {
-  font-family: 'Roboto', sans-serif;
-}
-
 /* .bg-index {
   @apply bg-app-index;
 } */
+
+/* ========== Styles PieChart ========== */
+.circle-background,
+.circle-progress {
+  fill: none;
+}
+
+.circle-background {
+  stroke: #ffe5d3;
+}
+
+.circle-progress {
+  stroke: #ff3a29;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.circle-text {
+  font-size: 3em;
+  font-weight: bold;
+  fill: #ff3a29;
+}
 
 /* ========== SCROLL BAR ========== */
 ::-webkit-scrollbar {
