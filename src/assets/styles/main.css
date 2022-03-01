@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 body {
-  scrollbar-width: thin; /* "auto" or "thin" */
-  scrollbar-color: #bedbfe #1e3a8a; /* scroll thumb and track */
+  scrollbar-width: thin;
+  scrollbar-color: #bedbfe #1e3a8a;
 }
 
 html {
@@ -15,7 +15,7 @@ html {
   @apply bg-app-index;
 } */
 
-/*========== SCROLL BAR ==========*/
+/* ========== SCROLL BAR ========== */
 ::-webkit-scrollbar {
   width: 6px;
   background-color: #1e3a8a;
