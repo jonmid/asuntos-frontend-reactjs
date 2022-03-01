@@ -15,7 +15,7 @@ const App = () => {
           <Route path='/' element={<LandingPageScreen />} />
           <Route path='/app' element={<AdminScreen />}>
             <Route index element={<HomeScreen />} />
-            <Route path='*' element={<h1>404 Not Found Interno</h1>} />
+            {/* <Route path='*' element={<h1>404 Not Found Interno</h1>} /> */}
           </Route>
           <Route path='/login' element={<LoginScreen />} />
           <Route path='*' element={<NotFoundScreen />} />
