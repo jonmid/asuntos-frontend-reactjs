@@ -6,14 +6,14 @@ import logoIcon from './../../assets/icons/logo.svg'
 const Menu = () => {
   return (
     <nav className='flex flex-col h-screen bg-blue-900'>
-      <div className='mt-10'>
+      <section className='mt-10'>
         <div className='flex space-x-3 items-center justify-center'>
           <img className='select-none' src={logoIcon} alt='logo' />
           <span className='text-2xl font-bold text-blue-100 select-none'>Asuntos</span>
         </div>
-      </div>
+      </section>
 
-      <section className='grow mt-12 overflow-auto overflow-y-auto'>
+      <section className='grow mt-12 overflow-auto'>
         <ul className='flex flex-col text-blue-300'>
           <li className='flex items-center py-5 pl-10 pr-14 text-white font-bold border-l-4 border-red-700'>
             <IconHome2 stroke={2} className='shrink-0' /> <span className='shrink-0 ml-2'>Jhonatan Mideros</span>
@@ -43,7 +43,11 @@ const Menu = () => {
         </ul>
       </section>
 
-      <section className='bg-yellow-200'>msg</section>
+      <section className='flex items-center justify-center pt-5 pb-10'>
+        <div className='w-[200px] p-4 text-sm text-blue-200 bg-blue-700 rounded-lg shadow select-none'>
+          <span className='font-bold'>Bienvenid@</span>, este es un demo del funcionamiento de la aplicación para administrar Asuntos.
+        </div>
+      </section>
     </nav>
   )
 }
