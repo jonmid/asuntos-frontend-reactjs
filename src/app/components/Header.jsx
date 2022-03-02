@@ -1,21 +1,22 @@
 import React from 'react'
-import { IconSearch, IconDotsVertical } from '@tabler/icons'
+import { IconSearch } from '@tabler/icons'
 
 // import messageIcon from './../../assets/icons/message.svg'
 // import notificationIcon from './../../assets/icons/notification.svg'
 import avatarIcon from './../../assets/img/avatar.png'
+import Dropdown from './../components/Dropdown'
 
 const Header = () => {
   return (
-    <header className='flex items-center justify-end h-20 bg-app-header shadow-lg border-b border-app-200 sm:justify-start'>
-      <div className='hidden sm:grow sm:flex sm:items-center sm:pl-3 md:pl-10'>
+    <header className='flex h-20 items-center justify-end border-b border-app-200 bg-app-header shadow-lg sm:justify-start'>
+      <div className='hidden sm:flex sm:grow sm:items-center sm:pl-3 md:pl-10'>
         <div className='text-app-500'>
           <IconSearch size={24} stroke={3} />
         </div>
         <div className='ml-4 text-xs font-light text-gray-400 underline md:text-sm'>Buscar asuntos, abogados, solicitantes</div>
       </div>
 
-      <div className='hidden sm:flex sm:items-center sm:pl-8 sm:border-l sm:mr-5'>
+      <div className='hidden sm:mr-5 sm:flex sm:items-center sm:border-l sm:pl-8'>
         {/* <div className='flex space-x-4 items-center'>
           <button>
             <img src={messageIcon} alt='messageIcon' />
@@ -31,14 +32,14 @@ const Header = () => {
           </div>
 
           <div className='flex flex-col justify-center'>
-            <h4 className='text-base text-gray-800 font-bold select-none'>Mia V</h4>
-            <span className='text-xs text-gray-400 select-none'>Student</span>
+            <h4 className='select-none text-base font-bold text-gray-800'>Mia V</h4>
+            <span className='select-none text-xs text-gray-400'>Student</span>
           </div>
         </div>
       </div>
 
-      <div className='mr-8 text-app-500'>
-        <IconDotsVertical />
+      <div className='mr-8'>
+        <Dropdown />
       </div>
     </header>
   )
