@@ -4,7 +4,7 @@ import { IconFiles, IconArchive } from '@tabler/icons'
 
 import Layout from './../components/Layout'
 import PieChart from './../components/PieChart'
-import BarChartApp from './../components/BarChartApp'
+import VerticalBarChart from './../components/VerticalBarChart'
 
 const HomeScreen = () => {
   return (
@@ -16,9 +16,9 @@ const HomeScreen = () => {
       <Layout>
         <h2 className='ml-5 mt-10 text-2xl font-medium text-app-800'>Datos Generales</h2>
 
-        <section className='grid grid-cols-1 gap-4 mt-10 px-3 sm:grid-cols-2 sm:px-5 lg:grid-cols-[auto_1fr_auto] lg:grid-rows-2 lg:px-2'>
-          <div className='flex items-center justify-center space-x-4 py-10 bg-white rounded-[20px] shadow lg:px-5 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2'>
-            <div className='flex items-center justify-center w-[70px] h-[70px] text-red-500 bg-red-100 rounded-full'>
+        <section className='mt-10 grid grid-cols-1 gap-4 px-3 sm:grid-cols-2 sm:px-5 lg:grid-cols-[auto_1fr_auto] lg:grid-rows-2 lg:px-2'>
+          <div className='flex items-center justify-center space-x-4 rounded-[20px] bg-white py-10 shadow lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2 lg:px-5'>
+            <div className='flex h-[70px] w-[70px] items-center justify-center rounded-full bg-red-100 text-red-500'>
               <IconFiles size={32} stroke={2} />
             </div>
             <div>
@@ -27,8 +27,8 @@ const HomeScreen = () => {
             </div>
           </div>
 
-          <div className='flex items-center justify-center space-x-4 py-10 bg-white rounded-[20px] shadow lg:px-5 lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-3'>
-            <div className='flex items-center justify-center w-[70px] h-[70px] text-green-500 bg-green-100 rounded-full'>
+          <div className='flex items-center justify-center space-x-4 rounded-[20px] bg-white py-10 shadow lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-3 lg:px-5'>
+            <div className='flex h-[70px] w-[70px] items-center justify-center rounded-full bg-green-100 text-green-500'>
               <IconArchive size={32} stroke={2} />
             </div>
             <div>
@@ -37,17 +37,17 @@ const HomeScreen = () => {
             </div>
           </div>
 
-          <div className='flex flex-col bg-white rounded-[20px] shadow sm:col-span-2 md:col-auto lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-3 overflow-hidden'>
-            <h2 className='py-6 pl-6 text-sm font-normal text-gray-700 border-b border-gray-200 sm:text-base xl:text-lg'>Número de casos cerrados por mes</h2>
+          <div className='flex flex-col overflow-hidden rounded-[20px] bg-white shadow sm:col-span-2 md:col-auto lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-3'>
+            <h2 className='border-b border-gray-200 py-6 pl-6 text-sm font-normal text-gray-700 sm:text-base xl:text-lg'>Número de casos cerrados por mes</h2>
             <div className='flex-1 py-5'>
-              <BarChartApp />
+              <VerticalBarChart />
             </div>
           </div>
 
-          <div className='flex flex-col space-y-7 px-10 py-6 bg-white rounded-[20px] shadow overflow-hidden sm:col-span-2 md:col-auto lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-3'>
+          <div className='flex flex-col space-y-7 overflow-hidden rounded-[20px] bg-white px-10 py-6 shadow sm:col-span-2 md:col-auto lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-3'>
             <h2 className='text-xl font-medium text-gray-700'>Asuntos</h2>
 
-            <div className='grow flex items-center justify-center'>
+            <div className='flex grow items-center justify-center'>
               <PieChart strokeWidth='10' sqSize='150' percentage={70} />
             </div>
 
