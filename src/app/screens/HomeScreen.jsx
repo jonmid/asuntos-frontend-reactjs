@@ -16,7 +16,7 @@ const HomeScreen = () => {
       <Layout>
         <h2 className='ml-5 mt-10 text-2xl font-medium text-app-800'>Datos Generales</h2>
 
-        <section className='mt-10 grid grid-cols-1 gap-4 px-3 sm:grid-cols-2 sm:px-5 lg:grid-cols-[auto_1fr_auto] lg:grid-rows-2 lg:px-2'>
+        <section className='mt-10 grid grid-cols-1 gap-4 px-3 sm:grid-cols-2 sm:px-5 lg:h-[390px] lg:grid-cols-[auto_1fr_auto] lg:grid-rows-2 lg:px-2'>
           <div className='flex items-center justify-center space-x-4 rounded-[20px] bg-white py-10 shadow lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2 lg:px-5'>
             <div className='flex h-[70px] w-[70px] items-center justify-center rounded-full bg-red-100 text-red-500'>
               <IconFiles size={32} stroke={2} />
@@ -38,8 +38,8 @@ const HomeScreen = () => {
           </div>
 
           <div className='flex flex-col overflow-hidden rounded-[20px] bg-white shadow sm:col-span-2 md:col-auto lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-3'>
-            <h2 className='border-b border-gray-200 py-6 pl-6 text-sm font-normal text-gray-700 sm:text-base xl:text-lg'>Número de casos cerrados por mes</h2>
-            <div className='flex-1 py-5'>
+            <h2 className='border-b border-gray-200 py-6 px-6 text-sm font-medium text-gray-500 sm:text-base xl:text-lg'>Número de casos abiertos y cerrados por mes</h2>
+            <div className='flex-1 py-5 sm:px-3 md:px-1 lg:px-0 xl:px-3 2xl:px-5'>
               <VerticalBarChart />
             </div>
           </div>
